@@ -1,7 +1,7 @@
 import MemberCard from "./components/MemberCard";
 import licenseData from "./license.json";
 import React, { useState } from "react";
-import logo from "./assets/dharan-run-logo.jpg";
+import logo from "./assets/tmsodkt-logo.jpg";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
