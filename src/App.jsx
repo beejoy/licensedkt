@@ -29,7 +29,7 @@ const App = () => {
           alt="TMSO Dhankuta"
           className="rounded-full w-1/2 border-green-700 mb-8"
           width="160px"
-          height="210px"
+          height="235px"
         />
         <form
           onSubmit={handleSubmit}
