@@ -20,7 +20,9 @@ const MemberCard = ({ data }) => {
         </span>
       </p>
       <p>
-        <span>Slot: {data.SLOTNO}</span>
+        <span>
+          Slot: <span className="font-bold">{data.SLOTNO}</span>
+        </span>
       </p>
     </div>
   );
