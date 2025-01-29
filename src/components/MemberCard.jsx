@@ -7,6 +7,8 @@ const MemberCard = ({ data }) => {
 
       <p className="flex justify-between">
         <span>Name: {data["NAME"]}</span>
+      </p>
+      <p>
         <span>
           License No.: <span className="font-bold">{data.DLNO}</span>
         </span>
@@ -16,7 +18,9 @@ const MemberCard = ({ data }) => {
         <span>
           Category: {data.CATEGORY}
         </span>
-        <span>Slot: {data.SLOT}</span>
+      </p>
+      <p>
+        <span>Slot: {data.SLOTNO}</span>
       </p>
     </div>
   );
