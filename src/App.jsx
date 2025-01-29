@@ -11,13 +11,13 @@ const App = () => {
     e.preventDefault();
     searchTerm.match(/[a-z]/)
       ? setLicense(
-          licenseData .filter((data) =>
-            data.Fullname.toLowerCase().match(
+          licenseData.filter((data) =>
+            data.NAME.toLowerCase().match(
               searchTerm.length > 0 ? searchTerm : "xiaomi"
             )
           )
         )
-      : setLicense(licenseData .filter((data) => data.ID === Number(searchTerm)));
+      : setLicense(licenseData.filter((data) => data.DLNO.match(searchTerm)));
     setSearchTerm("");
   };
 
@@ -26,10 +26,10 @@ const App = () => {
       <div className="flex flex-col items-center mx-auto py-8 text-green-700 max-w-xs sm:max-w-xs">
         <img
           src={logo}
-          alt="Dharan Run"
+          alt="TMSO Dhankuta"
           className="rounded-full w-1/2 border-green-700 mb-8"
           width="160px"
-          height="190px"
+          height="210px"
         />
         <form
           onSubmit={handleSubmit}
