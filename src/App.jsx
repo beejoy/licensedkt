@@ -17,7 +17,7 @@ const App = () => {
             )
           )
         )
-      : setLicense(licenseData.filter((data) => data.DLNO.match(searchTerm)));
+      : setLicense(licenseData.filter((data) => data.DLNO.match(searchTerm.length > 0 ? searchTerm : "xiaomi")));
     setSearchTerm("");
   };
 
