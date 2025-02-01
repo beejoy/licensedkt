@@ -23,11 +23,11 @@ const App = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center mx-auto py-8 text-sky-500 max-w-xs sm:max-w-xs">
+      <div className="flex flex-col items-center mx-auto py-8 text-sky-600 max-w-xs sm:max-w-xs">
         <img
           src={logo}
           alt="TMSO Dhankuta"
-          className="rounded-full w-1/2 border-sky-500 mb-8"
+          className="rounded-full w-1/2 border-sky-600 mb-8"
           width="160px"
           height="235px"
         />
@@ -44,18 +44,18 @@ const App = () => {
             value={searchTerm}
             placeholder="Enter license number or name"
             onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}
-            className="text-sky-500 border-sky-500 outline-sky-500 outline-1 text-center px-5 py-2 rounded-md border w-full"
+            className="text-sky-600 border-sky-600 outline-sky-600 outline-1 text-center px-5 py-2 rounded-md border w-full"
           />
           <button
             type="submit"
-            className="bg-sky-500 py-2 px-10 rounded-md text-white hover:outline-1 hover:outline-sky-500/40 hover:bg-sky-500 hover:shadow-md"
+            className="bg-sky-600 py-2 px-10 rounded-md text-white hover:outline-1 hover:outline-sky-600/40 hover:bg-sky-600 hover:shadow-md"
           >
             Search
           </button>
         </form>
       </div>
 
-      <div className="flex flex-col items-center mx-auto py-8 text-sky-500 max-w-xs sm:max-w-xs md:max-w-2xl">
+      <div className="flex flex-col items-center mx-auto py-8 text-sky-600 max-w-xs sm:max-w-xs md:max-w-2xl">
         {license && license.length > 0 ? (
           <>
             <div className="flex flex-col gap-y-3 w-full">
