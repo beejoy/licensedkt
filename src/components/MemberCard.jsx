@@ -2,11 +2,11 @@ const MemberCard = ({ data }) => {
   return (
     <div className="w-[320px] p-3 flex flex-col gap-y-1 text-sm outline-1 border-slate-300 border bg-white rounded-lg shadow-lg">
       <p>
-        S.No.: <span className="font-bold">{data.SN}</span>
+        S.No.: {data.SN}
       </p>
 
       <p className="flex justify-between">
-        <span>Name: {data["NAME"]}</span>
+        <span>Name: <span className="font-bold">{data["NAME"]}</span></span>
       </p>
       <p>
         <span>
@@ -21,7 +21,7 @@ const MemberCard = ({ data }) => {
       </p>
       <p>
         <span>
-          Slot: <span className="font-bold">{data.SLOTNO}</span>
+          Slot No.: <span className="font-bold">{data.SLOTNO}</span>
         </span>
       </p>
     </div>
