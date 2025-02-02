@@ -1,3 +1,3 @@
-# Dharan Run - Check My Run
+# TMSO Dhankuta License
 
-A basic react app for Dharan Run member runners to check their run history.
+A basic react app for clients to check if their license has been dispatched.
